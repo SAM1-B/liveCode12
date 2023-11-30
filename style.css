@@ -30,6 +30,9 @@
 .heroTxtMe{
     font-size: 40px;
 }
+.leftTxt{
+    margin-left: 100px;
+}
 .hero h1{
     color: rgb(2, 2, 58);
     font-size: 40px;
@@ -40,4 +43,11 @@
     text-align: center;
     margin-top: 120px;
     color: rgb(2, 2, 58);
+}
+
+.romTxt:hover{
+    background-color: rgb(2, 2, 58);
+   
+    border-radius: 7px;
+    color: white;
 }
