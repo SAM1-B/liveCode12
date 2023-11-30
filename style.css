@@ -16,16 +16,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5s ease;
 }
-.navbar-toggler{
-    position: fixed;
-    right: 20px;
-}
+
 
 .navBtn{
     background: rgb(2, 2, 58);
     color: white;
     
+}
+.navBtnTop{
+    display: flex;
+    align-items: center;
 }
 
 .navBtn:hover{
@@ -35,9 +37,17 @@
 .heroTxtMe{
     font-size: 40px;
 }
+.heroBtns{
+    display: flex;
+}
+
+.heroGroup{
+    justify-content: center;
+    align-items: center;
+}
 .leftTxt{
     margin-left: 100px;
-    margin-top: 100px;
+   
 }
 .hero h1{
     color: rgb(2, 2, 58);
@@ -77,7 +87,6 @@
 .dataSecurity{
     height: 50vh;
     box-shadow: 2px 2px 25px 5px rgb(231, 231, 231);
-   
     position: relative;
     text-align: center;
    
@@ -98,9 +107,16 @@
 
 
 @media(max-width:475px){
+
+    .heroBtns{
+        display: block;
+    }
     .leftTxt{
-        margin-left: 20px;
+        margin-left: 0px;
         margin-top: -50px;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 20px;
     }
     .romeTxt{
         width: 80%;
@@ -110,4 +126,16 @@
         font-weight: 500px;
         color: rgb(33, 33, 143);
     }
+    .edozzierLogo{
+        display: none;
+    }
+    .mobileNav{
+        background-color: white;
+        padding: 30px 0;
+    }
+    .navBtnTop{
+        display: block;
+        
+    }
+   
 }
