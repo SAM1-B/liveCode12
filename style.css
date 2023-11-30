@@ -17,6 +17,10 @@
     align-items: center;
     justify-content: center;
 }
+.navbar-toggler{
+    position: fixed;
+    right: 20px;
+}
 
 .navBtn{
     background: rgb(2, 2, 58);
@@ -45,11 +49,12 @@
     text-align: center;
     margin-top: 120px;
     color: rgb(2, 2, 58);
+    
 }
 
 .romTxt:hover{
     background-color: rgb(2, 2, 58);
-   
+    transition: all .5s ease;
     border-radius: 7px;
     color: white;
 }
@@ -62,5 +67,13 @@
     .leftTxt{
         margin-left: 20px;
         margin-top: -50px;
+    }
+    .romeTxt{
+        width: 80%;
+    }
+    .romeTxt a{
+        text-decoration: none;
+        font-weight: 500px;
+        color: rgb(33, 33, 143);
     }
 }
