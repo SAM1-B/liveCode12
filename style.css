@@ -7,7 +7,7 @@
 .body{
     background-color: rgb(230, 230, 230);
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .navbar{
     position: fixed;
@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 2px solid rgb(238, 238, 238);
     transition: all .5s ease;
 }
 
@@ -23,7 +24,7 @@
 .navBtn{
     background: rgb(2, 2, 58);
     color: white;
-    
+       
 }
 .navBtnTop{
     display: flex;
@@ -31,7 +32,7 @@
 }
 
 .navBtn:hover{
-    background: rgb(13, 13, 156);
+    background: rgb(33, 33, 80);
 }
 
 
@@ -48,6 +49,7 @@
 }
 .leftTxt{
     margin-left: 100px;
+    
    
 }
 .hero h1{
@@ -113,8 +115,6 @@
 
 @media(max-width:475px){
 
-
-
     .heroBtns{
         display: block;
         gap:10px;
@@ -141,13 +141,17 @@
         display: none;
     }
     .mobileNav{
+        justify-content: space-between;
         background-color: white;
-        padding:10px 0;
+        padding:20px 0;
+        transition: .3s ease;
     }
     .navBtnTop{
-        display: none;
-
-        
+        display: block;   
+    }
+    .navBtn{
+        margin-top: 10px;
+           
     }
     .dataSecurityMID,.dataSecurity{
         height: 60vh;
